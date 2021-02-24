@@ -153,6 +153,9 @@ section {
     padding: 0;
     line-height: 1.2;
   }
+  /* .hello::after{
+    content: "..";
+  } */
   .hello-span {
     margin: 0;
     font-size: 1.4rem;
@@ -172,4 +175,18 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #2bb2ff;
   border: 2px solid #14171b;
+}
+.loader{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #14171b;
+  z-index: 999;
+}
+.loader::after{
+  color: white;
+  font-size: 6rem;
+  content: "Loading...";
+  margin-left: 500px;
+  margin-top: 500px;
 }
