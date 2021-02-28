@@ -26,7 +26,7 @@ p {
   font-size: 1rem;
   letter-spacing: 0.5px;
 }
-span{
+span {
   font-size: 1rem;
   letter-spacing: 1.5px;
 }
@@ -36,6 +36,9 @@ section {
 }
 .section-1 {
   /* min-height: 90vh !important; */
+  padding-top: 40px;
+}
+.section-bio-1 {
   padding-top: 40px;
 }
 .container {
@@ -202,7 +205,7 @@ section {
   letter-spacing: 0.5px;
 }
 
-.scroll-down{
+.scroll-down {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -222,12 +225,59 @@ section {
   padding: 0;
   margin: 0;
 }
-
-
+.bio-content {
+  margin-bottom: 80px;
+}
 .bio-header {
   text-align: center;
 }
+.bio-text-container {
+  display: flex;
+  padding: 0 240px 0 400px;
+  flex-wrap: nowrap;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.bio-text-container > .bio-left {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+}
+.bio-left, .bio-separator, .bio-right {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.bio-left > p, .bio-separator > span, .bio-right > p, .bio-right > a > p {
+  margin: 16px 0;
+}
 
+.bio-left > p, .bio-separator > span, .bio-right > p, .bio-right > a > p {
+  font-size: 24px;
+}
+.bio-text-container > .bio-separator {
+  display: flex;
+  flex: 0.2;
+}
+.bio-text-container > .bio-right {
+  display: flex;
+  flex: 2;
+}
+.vi {
+  position: absolute;
+}
+.vi-small {
+  left: 0;
+  bottom: 80px;
+  z-index: -999;
+}
+.vi-big {
+  right: 0px;
+  bottom: -80px;
+  z-index: -999;
+}
 /* Only ready for PC */
 @media only screen and (min-width: 1200px) {
   .container {

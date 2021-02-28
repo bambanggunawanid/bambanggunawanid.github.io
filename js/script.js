@@ -4,18 +4,6 @@
     scrollDuration: 800, // smoothscroll duration
     mailChimpURL: "", // mailchimp url
   };
-  const hello = function () {
-    const item = document.getElementById("hello");
-    item.addEventListener("mouseover", function (event) {
-      event.target.style.color = "white";
-      item.innerText = "Hello..";
-    });
-    item.addEventListener("mouseout", function (event) {
-      event.target.style.color = "#2bb2ff";
-      item.innerText = "Hello.";
-    });
-  };
-
   const ssPreloader = function () {
     $("html").addClass("ss-preload");
 
@@ -29,6 +17,17 @@
       // for hero content animations
       $("html").removeClass("ss-preload");
       $("html").addClass("ss-loaded");
+    });
+  };
+
+  const ssJumpWeb = function () {
+    $("#jumpWeb").on("click", function (e) {
+      const retVal = confirm("Do you want to visit my favorite web ?");
+      if (retVal == true) {
+        return true;
+      } else {
+        return false;
+      }
     });
   };
 
@@ -65,6 +64,6 @@
     }
     ssPreloader();
     ssSmoothScroll();
-    hello();
+    ssJumpWeb();
   })();
 })(jQuery);
