@@ -27,6 +27,9 @@
   /* width: 100%; */
   color: white;
 }
+.screenNotSupport > p {
+  font-size: 32px;
+}
 
 .no-js #preloader,
 .oldie #preloader {
