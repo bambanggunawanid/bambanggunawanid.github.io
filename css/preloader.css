@@ -23,7 +23,7 @@
   bottom: 0;
   background: #14171b;
   z-index: 99999 !important;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   color: white;
 }
