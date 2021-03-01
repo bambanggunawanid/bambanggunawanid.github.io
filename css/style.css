@@ -95,6 +95,21 @@ section {
   background-color: #2bb2ff;
   color: white;
 }
+.btn-download-cv {
+  background-color: #2bb2ff;
+  border-radius: 12px;
+  flex-direction: row;
+  width: 35%;
+  margin-top: 24px;
+}
+.btn-download-cv > span {
+  font-size: 1.5rem;
+  margin: 0 -32px;
+  font-weight: bold;
+}
+.btn-download-cv > i {
+  font-size: 2rem;
+}
 .active {
   font-weight: bold;
   color: white !important;
@@ -356,7 +371,7 @@ section {
 .picture > p {
   position: absolute;
   text-align: center;
-  line-height: 480px ;
+  line-height: 480px;
   width: 97%;
   height: 100%;
   font-size: 2rem;
