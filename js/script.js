@@ -5,16 +5,20 @@
     mailChimpURL: "", // mailchimp url
   };
   const hello = function () {
-    const item = document.getElementById("hello");
-    if (item.id != "hello") {
-      item.addEventListener("mouseover", function (event) {
-        event.target.style.color = "white";
-        item.innerText = "Hello..";
-      });
-      item.addEventListener("mouseout", function (event) {
-        event.target.style.color = "#2bb2ff";
-        item.innerText = "Hello.";
-      });
+    const detectIndex = document.getElementsByClassName("active");
+    console.log(detectIndex[0].outerText);
+    if (detectIndex[0].outerText === "HOME") {
+      const item = document.getElementById("hello");
+      if (item.id === "hello") {
+        item.addEventListener("mouseover", function (event) {
+          event.target.style.color = "white";
+          item.innerText = "Hello..";
+        });
+        item.addEventListener("mouseout", function (event) {
+          event.target.style.color = "#2bb2ff";
+          item.innerText = "Hello.";
+        });
+      }
     }
   };
 
