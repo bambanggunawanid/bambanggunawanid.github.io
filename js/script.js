@@ -4,6 +4,20 @@
     scrollDuration: 800, // smoothscroll duration
     mailChimpURL: "", // mailchimp url
   };
+  const hello = function () {
+    const item = document.getElementById("hello");
+    if (item.id != "hello") {
+      item.addEventListener("mouseover", function (event) {
+        event.target.style.color = "white";
+        item.innerText = "Hello..";
+      });
+      item.addEventListener("mouseout", function (event) {
+        event.target.style.color = "#2bb2ff";
+        item.innerText = "Hello.";
+      });
+    }
+  };
+
   const ssPreloader = function () {
     $("html").addClass("ss-preload");
 
@@ -65,5 +79,6 @@
     ssPreloader();
     ssSmoothScroll();
     ssJumpWeb();
+    hello();
   })();
 })(jQuery);
