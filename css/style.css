@@ -342,21 +342,30 @@ section {
 .picture {
   position: relative;
 }
-.picture > img,
-.picture > a > img {
+.picture > img {
   margin: 12px;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.picture > p:hover {
+  opacity: 1;
 }
 .picture > p {
+  position: absolute;
   text-align: center;
+  line-height: 480px ;
+  width: 97%;
+  height: 100%;
   font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin: 12px;
+  top: 0;
+  left: 0;
+  background-color: #14171b;
+  opacity: 0;
+  transition: 0.3s ease-out;
 }
-/* .picture > a {
-  transform: translate(0, 0) scale(1);
-  transition: 0.5s ease-in-out;
-}
-.picture > a > :hover {
-  transform: translate(0, -5%) scale(1.1);
-} */
 /* Only ready for PC */
 @media only screen and (min-width: 1200px) {
   .container {
