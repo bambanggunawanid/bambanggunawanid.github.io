@@ -245,16 +245,24 @@ section {
   flex: 1;
   justify-content: flex-start;
 }
-.bio-left, .bio-separator, .bio-right {
+.bio-left,
+.bio-separator,
+.bio-right {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
-.bio-left > p, .bio-separator > span, .bio-right > p, .bio-right > a > p {
+.bio-left > p,
+.bio-separator > span,
+.bio-right > p,
+.bio-right > a > p {
   margin: 16px 0;
 }
 
-.bio-left > p, .bio-separator > span, .bio-right > p, .bio-right > a > p {
+.bio-left > p,
+.bio-separator > span,
+.bio-right > p,
+.bio-right > a > p {
   font-size: 24px;
 }
 .bio-text-container > .bio-separator {
@@ -278,6 +286,77 @@ section {
   bottom: -80px;
   z-index: -999;
 }
+
+/* Portfolio */
+.portfolio-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 56px 160px;
+}
+.portfolio-text {
+  margin-top: 240px;
+}
+.portfolio-text > h1 {
+  margin: 0;
+  font-size: 72px;
+}
+.portfolio-text > h4 {
+  margin: 0;
+  color: #2bb2ff;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  font-weight: normal;
+}
+.portfolio-text > p {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 1.5px;
+  font-weight: normal;
+}
+.light > img {
+  position: absolute;
+  z-index: -999;
+  right: 0;
+  top: 0;
+}
+.skill-canvas {
+  display: flex;
+  flex-direction: column;
+  background-color: #1f242a;
+  margin-top: -60px;
+  padding: 24px 160px;
+  border-radius: 24px;
+  margin-bottom: 120px;
+}
+.skill > ul > li > h3 {
+  font-size: 24px;
+}
+/*  */
+
+/* Hobby */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.picture {
+  position: relative;
+}
+.picture > img,
+.picture > a > img {
+  margin: 12px;
+}
+.picture > p {
+  text-align: center;
+  font-size: 2rem;
+}
+/* .picture > a {
+  transform: translate(0, 0) scale(1);
+  transition: 0.5s ease-in-out;
+}
+.picture > a > :hover {
+  transform: translate(0, -5%) scale(1.1);
+} */
 /* Only ready for PC */
 @media only screen and (min-width: 1200px) {
   .container {
