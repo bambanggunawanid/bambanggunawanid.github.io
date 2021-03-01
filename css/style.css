@@ -328,6 +328,9 @@ section {
   border-radius: 24px;
   margin-bottom: 120px;
 }
+.skill-canvas > h2 {
+  margin: 0;
+}
 .skill > ul > li > h3 {
   font-size: 24px;
 }
